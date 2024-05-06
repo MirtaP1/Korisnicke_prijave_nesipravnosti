@@ -455,8 +455,7 @@ function MyForm() {
               className="helper-input"
               required 
               onInvalid={(e) => e.target.setCustomValidity('Molimo unesite model uređaja.')}
-              onInput={(e) => e.target.setCustomValidity('')} 
-              onChange={handleDeviceTypeChange}/>
+              />
           </div>
           {deviceType === "Web" && ( 
           <div>
@@ -679,8 +678,7 @@ function MyForm() {
             className="helper-input"
             required 
             onInvalid={(e) => e.target.setCustomValidity('Please enter the device model.')}
-            onInput={(e) => e.target.setCustomValidity('')} 
-            onChange={handleDeviceTypeChange}/>
+            />
         </div>
         {deviceType === "Web" && ( 
           <div>
